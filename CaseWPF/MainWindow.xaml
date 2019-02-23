@@ -1,0 +1,73 @@
+﻿<Window x:Class="CaseWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CaseWPF"
+        mc:Ignorable="d"
+        Title="Open Case" Height="350" Width="525" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Cursor="Arrow" Icon="Icon2.png">
+    <Grid>
+        <Button x:Name="NewGame_Button" Content="Новая игра" Margin="186,139,187,140" FontSize="14" Click="NewGame_Button_Click"/>
+        <Button x:Name="DownloadGame_Button" Content="Загрузить игру" Margin="186,185,187,94" FontWeight="Bold" FontSize="14" Click="DownloadGame_Button_Click"/>
+        <Button x:Name="Exit_Button" Content="Выйти" Margin="186,231,187,48" FontSize="14" Click="Exit_Button_Click"/>
+        <Image x:Name="image" Margin="80,0,0,186" Height="124" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="357" Source="Icon.png"/>
+        <Label x:Name="Autor_Label" Content="By Eugene Serpinin" HorizontalAlignment="Left" Margin="10,288,0,0" VerticalAlignment="Top"/>
+        <Grid x:Name="Main_Panel" HorizontalAlignment="Left" Height="322" VerticalAlignment="Top" Width="519" Background="White">
+            <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="210" VerticalAlignment="Top" Width="519" TabStripPlacement="Bottom" BorderBrush="#00000000">
+                <TabItem Header="Инвентарь" Margin="0" Background="#FFABFF83" Width="256">
+                    <Grid x:Name="Inventory_Panel" Background="#FFEEEEEE" Margin="0,-3,189,-1" Width="320">
+                        <Image x:Name="Im0" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im1" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="64,0,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im2" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="128,0,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im3" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="192,0,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im4" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="256,0,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im5" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="0,36,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im6" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="64,36,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im7" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="128,36,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im8" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="192,36,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im9" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="256,36,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im10" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="0,72,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im11" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="64,72,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im12" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="128,72,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im13" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="192,72,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im14" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="256,72,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im15" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="0,108,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im16" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="64,108,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im17" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="128,108,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im18" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="192,108,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im19" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="256,108,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im20" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="0,144,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im21" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="64,144,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im22" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="128,144,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im23" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="192,144,0,0" MouseDown="PictureBox_Click"/>
+                        <Image x:Name="Im24" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" Margin="256,144,0,0" MouseDown="PictureBox_Click"/>
+                        <Button x:Name="Open_Button" Content="Открыть" Margin="349,37,-161,113" HorizontalAlignment="Left" Width="132" FontSize="16" FontWeight="Bold" Click="Open_Button_Click" IsEnabled="False"/>
+                        <Label x:Name="Code_Label" Content="*****" Margin="387,93,-127,59" FontSize="16" HorizontalAlignment="Center" Width="60"/>
+                        <TextBox x:Name="Code_Box" TextWrapping="Wrap" Margin="369,121,-139,36"/>
+                        <Button x:Name="Code_Button" Content="Ввести код" Margin="421,149,-170,8" Click="Code_Button_Click"/>
+                        <Label x:Name="Name_Label" Content="None" Margin="349,8,-161,148" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <Button x:Name="Sell_Button" Content="Продать" Margin="349,72,-161,85" IsEnabled="False" Click="Sell_Button_Click"/>
+                        <Button x:Name="Save_Button" Content="Сохранить" Margin="340,149,-87,8" HorizontalContentAlignment="Center" Click="Save_Button_Click"/>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Магазин" Background="#FF9AFF7C" Width="256">
+                    <Grid Background="#FFE5E5E5">
+                        <Label x:Name="label" Content="Что хотите купить?" Margin="170,10,170,135" FontSize="18"/>
+                        <Image x:Name="Ca4" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" MouseDown="ShopBox_Click" Margin="346,49,0,0"/>
+                        <Image x:Name="Ca3" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" MouseDown="ShopBox_Click" Margin="282,49,0,0"/>
+                        <Image x:Name="Ca2" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" MouseDown="ShopBox_Click" Margin="218,49,0,0"/>
+                        <Image x:Name="Ca1" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" MouseDown="ShopBox_Click" Margin="154,49,0,0"/>
+                        <Image x:Name="Ca0" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="64" MouseDown="ShopBox_Click" Margin="90,49,0,0"/>
+                        <Button x:Name="Buy_Button" Content="Купить" HorizontalAlignment="Left" Margin="170,98,0,0" VerticalAlignment="Top" Width="169" Height="36" Click="Buy_Button_Click" IsEnabled="False"/>
+                        <Label x:Name="label1" Content="Ваш капитал:" HorizontalAlignment="Left" Margin="85,95,0,0" VerticalAlignment="Top"/>
+                        <Label x:Name="Money_Label" Content="100" Margin="0,119,344,0" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+                        <Label x:Name="label3" Content="Стоимость:" HorizontalAlignment="Left" Margin="346,95,0,0" VerticalAlignment="Top"/>
+                        <Label x:Name="Cost_Label" Content="None" HorizontalAlignment="Left" Margin="346,119,0,0" VerticalAlignment="Top"/>
+                        <Label x:Name="CaseName_Label" Content="None" Margin="170,142,170,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </Grid>
+
+    </Grid>
+</Window>
